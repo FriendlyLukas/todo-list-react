@@ -1,0 +1,27 @@
+.tasks__manageButton {
+  cursor: pointer;
+  background-color: white;
+  border: none;
+  color: teal;
+}
+.tasks__manageButton:hover {
+  color: hsl(180, 100%, 35%);
+}
+
+.tasks__manageButton[disabled] {
+  color: #999;
+  cursor: not-allowed;
+}
+.tasks__header {
+  display: grid;
+  align-items: center;
+  font-size: medium;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .tasks__header {
+    grid-template-columns: 1fr;
+  }
+}
