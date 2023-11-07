@@ -11,7 +11,9 @@ const Tasks = (props) => (
       >
         <button className="tasks__taskButton">{task.done ? "✔" : ""}</button>
         <span className="tasks__taskContent">{task.content}</span>
-        <button className="tasks__taskButton tasks__taskButton--remove">
+        <button className="tasks__taskButton tasks__taskButton--remove"
+        onClick={() => props.removeTask(task.id)}
+        >  
           🗑
         </button>
       </li>
