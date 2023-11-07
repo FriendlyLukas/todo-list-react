@@ -11,7 +11,7 @@ const tasks = [
   { id: 2, content: "Pograć w Jenga", done: true },
 ];
 
-const hideDoneTasksParameter = false;
+const hideDone = false;
 
 function App() {
   return (
@@ -20,18 +20,8 @@ function App() {
       <Section title={"Dodaj nowe zadanie"} body={<Form />} />
       <Section
         title={"Lista zadań"}
-        extraHeaderContent={
-          <ManageButtons
-            tasks={tasks}
-            hideDoneTasksParameter={hideDoneTasksParameter}
-          />
-        }
-        body={
-          <Tasks
-            tasks={tasks}
-            hideDoneTasksParameter={hideDoneTasksParameter}
-          />
-        }
+        extraHeaderContent={<ManageButtons tasks={tasks} hideDone={hideDone} />}
+        body={<Tasks tasks={tasks} hideDone={hideDone} />}
       />
     </Container>
   );

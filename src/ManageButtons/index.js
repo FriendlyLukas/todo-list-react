@@ -1,11 +1,11 @@
 import "./style.css";
 
-const ManageButtons = ({ hideDoneTasksParameter, tasks }) => (
+const ManageButtons = ({ hideDone, tasks }) => (
   <div className="tasks__header">
     {tasks.length > 0 && (
       <>
         <button className="tasks__manageButton">
-          {hideDoneTasksParameter ? "Pokaż ukończone" : "Ukryj ukończone"}
+          {hideDone ? "Pokaż ukończone" : "Ukryj ukończone"}
         </button>
         <button
           className="tasks__manageButton"
