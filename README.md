@@ -12,6 +12,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - deploying to new branch in GitHub
 - useState
 
+## Demo
+
+![todo-list-react-interactions](https://github.com/FriendlyLukas/todo-list-react/assets/129426521/0614b442-ed02-4e42-a12d-03458c48b3a3)
+
+
 ## Available Scripts
 
 In the project directory, you can run:
